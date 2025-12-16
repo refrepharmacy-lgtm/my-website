@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リフレ薬局 | 株式会社メディカルコスモ</title>
+    
+    <!-- Google Fonts: M PLUS Rounded 1c -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- アイコンライブラリ (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ナビゲーションバー -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <a href="#" class="logo-link">
+                    <!-- ロゴ画像 -->
+                    <img src="rogo改.png" alt="リフレ薬局" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <!-- 画像がない場合のフォールバック -->
+                    <div class="logo-text-fallback" style="display: none;">
+                        <span class="logo-main">リフレ薬局</span>
+                        <span class="logo-sub">RECRUITMENT</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- デスクトップメニュー -->
+            <div class="desktop-menu">
+                <a href="#home" class="nav-link">ホーム</a>
+                <a href="#message" class="nav-link">採用担当より</a>
+                <a href="#features" class="nav-link">リフレの強み</a>
+                <a href="#welfare" class="nav-link">制度・福利厚生</a>
+                <a href="#stores" class="nav-link">店舗情報</a>
+                <a href="#entry" class="btn-entry">エントリーする！</a>
+            </div>
+
+            <!-- モバイルメニューボタン -->
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- モバイルメニュードロップダウン -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-nav-link">ホーム</a>
+            <a href="#message" class="mobile-nav-link">採用担当より</a>
+            <a href="#features" class="mobile-nav-link">リフレの強み</a>
+            <a href="#welfare" class="mobile-nav-link">制度・福利厚生</a>
+            <a href="#stores" class="mobile-nav-link">店舗情報</a>
+            <a href="#entry" class="mobile-btn-entry">まずはエントリー！</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section id="home" class="hero">
+            <!-- 背景装飾 -->
+            <div class="blob blob-yellow"></div>
+            <div class="blob blob-orange"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i data-lucide="sparkles" class="icon-sparkle"></i>
+                        2026年度 新卒採用エントリー受付中
+                    </div>
+                    <h1 class="hero-title">
+                        仙台で叶える、<br>
+                        <span class="text-highlight text-teal">私らしい</span>
+                        <span class="text-highlight text-orange">働き方。</span>
+                    </h1>
+                    <p class="hero-desc">
+                        転居なし・完全週休二日制・残業少なめ。<br>
+                        <span class="highlight-bg">「仕事もプライベートも全力で楽しみたい」</span><br>
+                        そんなあなたの願い、リフレ薬局なら叶います！
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#entry" class="btn-primary">
+                            まずはエントリー
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#features" class="btn-secondary">詳しく見る</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="circle-bg"></div>
+                        <div class="circle-inner"></div>
+                        <!-- キャラクター画像 -->
+                        <img src="refguts.png" alt="リフレ薬局キャラクター" class="character-img" onerror="this.style.display='none'">
+                        
+                        <!-- フローティングバッジ -->
+                        <div class="badge badge-top">
+                            <p class="badge-label">仙台近郊</p>
+                            <p class="badge-value">16店舗</p>
+                        </div>
+                        <div class="badge badge-bottom">
+                            <p>社長も薬剤師💊</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 波線の装飾 (Bottom) -->
+            <div class="wave-bottom">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 採用担当メッセージ -->
+        <section id="message" class="message-section">
+            <div class="container message-container">
+                <div class="message-image-col">
+                    <div class="photo-frame">
+                        <div class="photo-bg"></div>
+                        <div class="photo-inner">
+                            <div class="photo-placeholder">
+                                <i data-lucide="users" class="icon-large"></i>
+                            </div>
+                            <div class="photo-caption">
+                                <p class="name">西村 大資 <span>人事部長</span></p>
+                                <p class="sub">2009年中途入社 / Uターン転職</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speech-bubble">
+                        <p>「ここなら長く働ける」<br>そう確信しました！</p>
+                    </div>
+                </div>
+
+                <div class="message-text-col">
+                    <span class="section-tag">Staff Voice</span>
+                    <h2 class="section-title-md">
+                        大手ドラッグストアから<br>
+                        <span class="underline-teal">「完全週休二日」</span>の環境へ。
+                    </h2>
+                    <div class="message-body">
+                        <p>「前の職場では、繁忙時の待ち時間が長く、人間関係の悩みもありました…」</p>
+                        <div class="quote-box">
+                            <p>
+                                そんな時に出会ったのが、リフレ薬局。<br>
+                                <strong>「入社前に聞いていたより遠くに配属される」なんてことは絶対にない</strong>、という誠実さと、
+                                <strong>「完全週休二日制」</strong>という条件に惹かれました。
+                            </p>
+                        </div>
+                        <p>
+                            今は人事部長として、学生のみなさんが安心して飛び込める環境づくりに全力を注いでいます。
+                            ぜひ一度、私たちの「働きやすさ」を見に来てください！
+                        </p>
+                    </div>
+                    <div class="message-link">
+                        <a href="#features">
+                            リフレ薬局の魅力をもっと見る <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- リフレの強み -->
+        <section id="features" class="features-section">
+            <div class="wave-top">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+                </svg>
+            </div>
+            
+            <div class="container features-container">
+                <div class="section-header">
+                    <span class="section-badge">Why Refre?</span>
+                    <h2 class="section-title">
+                        リフレ薬局の<span class="text-orange-xl">2</span>大ポリシー
+                    </h2>
+                    <p class="section-desc">私たちは「人」と「安全」を何よりも大切にしています。</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- 強み1 -->
+                    <div class="feature-card">
+                        <div class="card-deco deco-yellow"></div>
+                        <div class="card-icon-box bg-yellow">
+                            <i data-lucide="users" class="icon-white"></i>
+                        </div>
+                        <h3 class="card-title">「共育」の精神</h3>
+                        <p class="card-desc">
+                            教える側も教わる側も、共に育つ。<br>
+                            OJTや店舗内勉強会だけでなく、外部研修や学会参加も積極的にサポート。
+                            薬剤師としてだけでなく、「社会人」としても立派に成長できる環境です。
+                        </p>
+                        <ul class="check-list">
+                            <li><i data-lucide="check-circle-2" class="icon-check-yellow"></i> 社会人としての自立支援</li>
+                            <li><i data-lucide="check-circle-2" class="icon-check-yellow"></i> 学会発表もサポート</li>
+                        </ul>
+                    </div>
+
+                    <!-- 強み2 -->
+                    <div class="feature-card">
+                        <div class="card-deco deco-teal"></div>
+                        <div class="card-icon-box bg-teal">
+                            <i data-lucide="shield-check" class="icon-white"></i>
+                        </div>
+                        <h3 class="card-title">ヒューマンエラー"0"へ</h3>
+                        <p class="card-desc">
+                            「人間は誰でもミスをする」という前提に立ち、システムでカバーします。<br>
+                            自社考案の監査システム『ATTELNO』や最新ロボット『DimeRo』を導入し、
+                            毎日の棚卸しで在庫を徹底管理しています。
+                        </p>
+                        <ul class="check-list">
+                            <li><i data-lucide="check-circle-2" class="icon-check-teal"></i> 監査システム『ATTELNO』全店導入</li>
+                            <li><i data-lucide="check-circle-2" class="icon-check-teal"></i> 毎日実施する「日次棚卸」</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wave-bottom fill-white">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 制度・福利厚生 -->
+        <section id="welfare" class="welfare-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-teal">Good</span> Life Balance
+                    </h2>
+                    <p class="section-desc">働きやすさを支える、充実の制度</p>
+                    <p class="click-hint">※カードをクリックすると詳細が見れます</p>
+                </div>
+
+                <div class="benefits-grid" id="benefitsGrid">
+                    <!-- JSでカードを生成します -->
+                </div>
+
+                <!-- 奨学金特設エリア -->
+                <div class="scholarship-card">
+                    <div class="scholarship-bg"></div>
+                    <div class="scholarship-content">
+                        <div class="scholarship-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="scholarship-text">
+                            <h4>薬学生応援！奨学金制度</h4>
+                            <div class="scholarship-details">
+                                <p>
+                                    在学中は<span class="highlight-yellow">月額5万円</span>を貸与。
+                                    そして、貸与期間の<span class="text-yellow">2.5倍の期間</span>勤務すれば、
+                                    <span class="highlight-underline">返済全額免除</span>！
+                                </p>
+                                <p class="scholarship-tip">
+                                    💡 アルバイトの時間を勉強に充てて、国家試験合格を目指そう！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 店舗情報 -->
+        <section id="stores" class="stores-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="icon-pin-wrapper">
+                        <i data-lucide="map-pin" class="icon-bounce"></i>
+                    </div>
+                    <h2 class="section-title">Area Network</h2>
+                    <p class="section-desc-lg">
+                        全16店舗が<span class="text-orange">仙台駅から16km圏内</span>。<br>
+                        近くだから、無理な異動もありません。
+                    </p>
+                </div>
+
+                <div class="areas-grid" id="areasGrid">
+                    <!-- JSで店舗リストを生成します -->
+                </div>
+
+                <div class="news-banner">
+                    <p><i data-lucide="star" class="icon-star"></i> 2024年4月、宮城野区に新しい仲間「小田原店」がオープンしました！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- エントリーフォーム -->
+        <section id="entry" class="entry-section">
+            <div class="entry-bg-pattern"></div>
+            <div class="container entry-container">
+                <div class="entry-card">
+                    <div class="entry-header">
+                        <span class="entry-badge">Entry Form</span>
+                        <h2 class="entry-title">まずは気軽に<br>話を聞いてみませんか？</h2>
+                        <p class="entry-desc">会社説明会、店舗見学、随時受付中。<br>ちょっとした質問でもOKです！</p>
+                    </div>
+
+                    <form class="entry-form" onsubmit="event.preventDefault(); alert('送信しました（デモ）');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>お名前 <span>*</span></label>
+                                <input type="text" placeholder="薬局 太郎" required>
+                            </div>
+                            <div class="form-group">
+                                <label>大学名 <span>*</span></label>
+                                <input type="text" placeholder="〇〇薬科大学" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>学年 <span>*</span></label>
+                            <select required>
+                                <option value="">選択してください</option>
+                                <option>薬学部 6年生（2026年卒）</option>
+                                <option>薬学部 5年生（2027年卒）</option>
+                                <option>薬学部 4年生以下</option>
+                                <option>既卒・その他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>メールアドレス <span>*</span></label>
+                            <input type="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>お問い合わせ内容</label>
+                            <textarea rows="3" placeholder="説明会に参加したい、奨学金について聞きたいなど"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i data-lucide="mail"></i> 送信する
+                        </button>
+                    </form>
+
+                    <div class="entry-footer">
+                        <p class="line-text">＼ LINEでも情報発信中 ／</p>
+                        <button class="btn-line">LINEで友だち追加</button>
+                        <div class="contact-info">
+                            <p>電話でのお問い合わせ：<span class="tel">022-714-2445</span></p>
+                            <p class="hours">（平日 9:00 - 18:00）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <div class="logo-box">
+                            <img src="rogo改.png" alt="リフレ薬局 ロゴ" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                            <span class="logo-fallback" style="display: none;">Refre</span>
+                        </div>
+                        <span class="company-name">株式会社メディカルコスモ</span>
+                    </div>
+                    <p class="footer-desc">
+                        仙台近郊に根ざして。<br>
+                        地域のみなさまの健康と、<br>
+                        働くスタッフの笑顔を守ります。
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>メニュー</h4>
+                    <ul>
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#message">採用担当より</a></li>
+                        <li><a href="#features">リフレの強み</a></li>
+                        <li><a href="#welfare">制度・福利厚生</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>採用情報</h4>
+                    <ul>
+                        <li><a href="#">募集要項</a></li>
+                        <li><a href="#">選考フロー</a></li>
+                        <li><a href="#">奨学金制度</a></li>
+                        <li><a href="#">会社説明会</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Access</h4>
+                    <p class="access-name">株式会社メディカルコスモ本社</p>
+                    <p class="access-addr">
+                        〒980-0804<br>
+                        宮城県仙台市青葉区大町1-1-8<br>
+                        第3青葉ビル3F
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Medical Cosmo Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- モーダル（詳細ポップアップ） -->
+    <div id="modalOverlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="modalCloseBtn" class="modal-close">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <div id="modalIconBox" class="modal-icon-box">
+                    <!-- Icon injected by JS -->
+                </div>
+                <h3 id="modalTitle" class="modal-title"></h3>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <!-- Description injected by JS -->
+            </div>
+            <div class="modal-footer">
+                <button id="modalCloseAction" class="btn-modal-close">閉じる</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
